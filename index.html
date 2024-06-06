@@ -2,24 +2,28 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Steen, Papier, Schaar</title>
+    <title>Rock Paper Scissors Game</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="container">
-      <h1>Steen, Papier, Schaar</h1>
-      <div class="choices">
-        <button class="choice" id="stone">Steen</button>
-        <button class="choice" id="paper">Papier</button>
-        <button class="choice" id="scissors">Schaar</button>
+    <div class="game-container">
+      <div id="countdown" class="countdown"></div>
+      <div id="human" class="output"></div>
+      <div id="computer" class="output"></div>
+      <div id="result" class="output"></div>
+      <div class="stats-container">
+        <div class="stats-item">Highscore: <span id="highscore">0</span></div>
+        <div class="stats-item">Streak: <span id="streak">0</span></div>
       </div>
-      <div class="results">
-        <p id="human">Jouw keuze:</p>
-        <p id="computer">Keuze van de computer:</p>
-        <p id="result">Resultaat:</p>
+      <div class="choices-container">
+        <div id="stone" class="choice">✊</div>
+        <div id="paper" class="choice">✋</div>
+        <div id="scissors" class="choice">✌️</div>
       </div>
     </div>
+    <audio id="winSound" src="oh my god woow.mp3"></audio>
+    <audio id="loseSound" src="haha.mp3"></audio>
+    <audio id="drawSound" src="AAAAH.mp3"></audio>
     <script src="script.js"></script>
   </body>
 </html>
